@@ -1,0 +1,13 @@
+.div-menues {
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.boton {
+    height: 80px !important;
+    width: 150px !important;
+    border-radius: 10% !important;
+}
