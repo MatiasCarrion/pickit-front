@@ -1,12 +1,10 @@
-const urlBase = 'http://localhost:4000/api';
+const urlBase = "http://localhost:4000/api";
 
-exports.getTodosLosAutos =  () => {
-    console.log("en servicio")
-    try {
-        fetch(urlBase+'/autos/todos')
-        .then(response => response.json())
-        .then(autos => console.log(autos))
-    } catch (error) {
-        
-    }
-}
+exports.getTodosLosAutos = async () => {
+  try {
+    const response = await (await fetch(urlBase + "/autos/todos")).json();
+    return response;
+  } catch (error) {
+      console.log(error)
+  }
+};
